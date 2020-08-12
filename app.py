@@ -4,7 +4,17 @@ app = Flask(__name__)
 def home():
     return "Hello, Flask!"
 
-    @app.errorhandler(404)
+@app.route("/")
+def login():
+    return render_template('register.html')
+
+@app.route("/")
+def home():
+    return render_template('home.html')
+    
+
+
+@app.errorhandler(404)
 def error404(e):
     # note that we set the 404 status explicitly
     return render_template('404.html'), 404
