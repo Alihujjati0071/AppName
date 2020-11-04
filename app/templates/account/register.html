@@ -1,0 +1,47 @@
+
+{% extends "base.html" %}
+{% block main %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3" >
+                <form method="POST" action="/register" >
+                    <div class="bg-light" id="register-div">
+                    <h1 class="text-info text-center" id="register-heading">Register</h1>
+
+                    <label for="email"></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                    <label for="psw"></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+                
+                    <label for="psw-repeat"></label>
+                    <input type="password" placeholder="Repeat Password" name="password_confirm" id="psw" required>
+                  
+                    <label for="phone-number"></label>
+                    <input type="number" placeholder="Phone-number(opitional)" name="phone-number" id="phone-no">
+
+                    <label for="date"></label>
+                    <input type="date" name="birthday " id="birthday" required> <br>
+
+                    <input type="radio" name="Male" id="gender-radio" value="Male" checked > <b>Male</b>
+                    <input type="radio" name="Male" id="gender-radio" value="Male" checked > <b>Female</b> <br>
+
+                    <button type="submit" class="btn btn-primary" id="registerbtn">Submit</button>
+               
+                    <p id="terms-conditions">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                
+                  </div>
+                  
+                  <div class="container signin">
+                    <p>Already have an account? <a href="/login">Sign in</a>.</p>
+                  </div>
+                </form>
+
+             </div>
+            </div>
+        </div>
+    </div>
+
+
+        {% endblock %}

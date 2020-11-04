@@ -1,0 +1,63 @@
+/* base html */
+#search-bar{
+    width: 35rem;
+}
+
+
+
+
+
+/* register css */
+
+
+#register-heading{
+   
+    padding: 2rem 0rem 2rem 0rem; 
+}
+#register-div{
+    background-color: #dfe6e6;
+}
+
+#email{
+    margin: 0rem 1rem 1rem 3rem;
+}
+#psw{
+    margin: 0rem 1rem 1rem 3rem;
+}
+
+#phone-no{
+    margin: 0rem 1rem 1rem 3rem;
+
+
+}
+
+#birthday{
+    margin: 0rem 1rem 1rem 3rem;
+    width: 180px;
+}
+
+#gender-radio{
+    margin: 0rem 1rem 1rem 5rem;
+}
+
+#registerbtn{
+    margin: 0rem 1rem 1rem 10rem;
+    width: 10rem;
+
+}
+
+#terms-conditions{
+    margin-left:2rem ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* login css */
+
+#submit-button{
+    width: 12rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
