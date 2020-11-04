@@ -48,15 +48,10 @@ def login():
             flash(str(error))
         else:
             flash("Welcome back!")
-            return redirect(url_for('account.userHome'))
+            return redirect(url_for('account.profile'))
 
     return render_template('account/login.html')
     
-@bp.route('/user-home', methods=['GET'])
-def userHome():
-
-    return render_template('account/usershomepage.html')
-
 @bp.route('/profile', methods=['GET', 'POST'])
 def profile():
 
